@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar fixed-top bg-dark navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bucklify</a>
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <RouterLink class="navbar-brand" to="/">Bucklify</RouterLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,8 +12,12 @@
                             Profile
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                            <li>
+                                <RouterLink class="dropdown-item" to="/login">Login</RouterLink>
+                            </li>
+                            <li>
+                                <RouterLink class="dropdown-item" to="/signup">Sign Up</RouterLink>
+                            </li>
                         </ul>
                     </li>
                 </ul>

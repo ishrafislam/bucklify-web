@@ -4,4 +4,7 @@
 
 <template>
     <Navbar></Navbar>
+    <div class="container mt-3">
+        <RouterView />
+    </div>
 </template>
